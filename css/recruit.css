@@ -1,0 +1,475 @@
+html{
+  font-size: 62.5%;
+  font-family: "メイリオ", "Meiryo", sans-serif;
+  line-height: 1.5
+}
+img{
+  vertical-align: bottom;
+}
+.onlyPC{
+  display: block;
+}
+.onlySP{
+  display: none;
+}
+.flex-area{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header {
+    background: rgba(255,255,255,0.91);
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+}
+.header-wrap{
+  width: 1010px;
+  margin: auto;
+  justify-content: space-between;
+}
+.recruit-text {
+    font-size: 1.514rem;
+    color: #000;
+    margin-left: 15px;
+}
+.glorbal-nav li{
+    font-size: 1.6rem;
+    color: #333;
+}
+.glorbal-nav>li>a {
+    display: inline-block;
+    padding: 18px 15px 24px;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #333333;
+}
+.link-btn{
+    justify-content: space-between;
+    font-size: 1.6rem;
+    color: #fff;
+}
+.entry, .mypage {
+    background: #fea416;
+    border-radius: 2px;
+}
+.entry a, .mypage a {
+    display: inline-block;
+    padding: 8px 29px 8px 20px;
+}
+.mypage {
+    margin-left: 10px;
+    background: #1b1464;
+}
+.tab-ic a::after{
+    content: "";
+    display: inline-block;
+    background: url('../images/recruit_top_ic01.png') no-repeat;
+    width: 10px;
+    height: 9px;
+    position: relative;
+    left: 10px;
+}
+.content-area .tab-ic a::after {
+    background: url(../images/recruit_top_ic06.png) no-repeat;
+    left: 22px;
+}
+
+.nav-inner {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: #e1e1e1;
+    padding: 30px;
+}
+.nav-title {
+    font-size: 2.0rem;
+}
+.nav-title::before {
+    content: "";
+    display: inline-block;
+    background: url(../images/recruit_top_ic05.png) #1b1464 no-repeat;
+    background-position: center;
+    width: 8px;
+    height: 13px;
+    padding: 12px 12px 11px 11px;
+    margin-right: 16px;
+    position: relative;
+    top: 4px;
+}
+.nav-content {
+    width: 1010px;
+    margin: auto;
+}
+.content-area {
+    margin-left: 70px;
+    align-items: stretch;
+}
+.content-area li {
+    background: #fff;
+    margin-right: 12px;
+    border-radius: 3px;
+}
+.content-area li a {
+    width: 100%;
+    height: 100%;
+    padding: 0 35px;
+    align-items: center;
+    display: flex;
+}
+.business-content li a {
+  padding: 0 ;
+  display: inline-block;
+}
+.business-name-drop {
+    text-align: center;
+    padding: 16px 0;
+    font-size: 1.6rem;
+}
+#main-area{
+  overflow: hidden;
+}
+.top-wrapper,
+.top {
+    position: relative;
+}
+.top-image img {
+    width: 100%;
+}
+.CatchCopy {
+    position: absolute;
+    top: 260px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.CatchCopy img {
+    width: 100%;
+}
+.business-area {
+    width: 1000px;
+    margin: auto;
+    justify-content: space-between;
+    position: absolute;
+    bottom: -160px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.business-area li {
+    position: relative;
+}
+.business-area li::after,
+.person-list::after{
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background: url('../images/recruit_top_ic02.png') no-repeat;
+  width: 34px;
+  height: 22px;
+  bottom: 0;
+  right: 0;
+}
+.business-name,.person-inner {
+    position: absolute;
+}
+.business-name {
+    top: 30px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 2.2rem;
+    color: #fff;
+}
+.business-name::after {
+    content: "";
+    display: block;
+    width: 26px;
+    height: 1px;
+    background: #fff;
+    margin: 15px auto 0;
+}
+.mainView {
+    background: url(../images/recruit_top_bg01.png) no-repeat;
+    background-size: contain;
+    padding: 232px 0 17px;
+    text-align: center;
+}
+.mainView h2 {
+    font-size: 4.0rem;
+    padding-bottom: 46px;
+}
+.mainView>p {
+    font-size: 1.6rem;
+    padding-bottom: 40px;
+}
+.slider-wrap {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto 62px;
+}
+.person-list {
+  text-align: left;
+  position: relative;
+}
+.person-inner {
+    bottom: 0;
+    padding: 16px 13px 15px;
+    color: #fff;
+    background: rgba(0,0,0,.5);
+    width: 100%;
+}
+.person-name {
+    font-size: 2.2rem;
+    padding-bottom: 15px;
+}
+.person-text {
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+.bx-wrapper {
+    box-shadow: none;
+    border: none;
+    margin-bottom: 0;
+}
+#next-btn, #prev-btn {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    background: #1b1464;
+    display: inline-block;
+    padding: 24px 13px 23px 14px;
+}
+#prev-btn {
+    left: -15px;
+}
+#next-btn {
+    right: -15px;
+}
+.bx-next, .bx-prev {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+#top-scroll {
+    text-align: right;
+    width: 1280px;
+    margin: auto;
+}
+#top-scroll a{
+  background: #000;
+  display: inline-block;
+  padding: 13px 9px 15px 10px;
+}
+.footer-wrap {
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 90px;
+}
+.f-left, .f-center, .f-right {
+    width: 33.3%;
+}
+.f-center {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+}
+.f-center .logo-wrap {
+    padding-bottom: 15px;
+}
+.f-left img,
+.f-right img{
+    width: 100%;
+}
+.f-logo img{
+    width: 125px;
+}
+.f-center .recruit-text{
+  font-size: 1.313rem;
+}
+@media screen and (max-width: 480px){
+  .onlyPC{
+    display: none;
+  }
+  .onlySP{
+    display: block;
+  }
+  img,
+  .header-wrap,
+  .link-btn,
+  .business-area,
+  .slider-wrap,
+  #top-scroll,
+  .f-center {
+    width: 100%;
+  }
+  header,
+  .top-wrapper,
+  .business-area{
+    position: relative;
+    bottom: 0;
+  }
+  .main-logo img{
+    width: 137px;
+  }
+  .link-btn {
+    font-size: 1.3rem;
+  }
+  .business-name {
+    font-size: 1.8rem;
+  }
+  .business-area li {
+    width: 50%;
+  }
+  .header-wrap {
+    padding: 10px 12px 5px;
+  }
+  .recruit-text{
+    font-size: 1.3125rem;
+    margin-left: 14px;
+  }
+  .menue-btn {
+    width: 41px;
+    height: 41px;
+    margin-bottom: 10px;
+  }
+  .humb-menue {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    background: #e1e1e1;
+    font-size: 1.5rem;
+  }
+  .humb-list {
+    position: relative;
+    margin: 0 12px;
+  }
+  .humb-list div {
+    padding: 18px 0 21px;
+    border-bottom: 1px solid #fff;
+  }
+  .humb-list::after,
+  .humb-list::before {
+    content: "";
+    background: #555;
+    background-size: 21px;
+    width: 21px;
+    height: 3px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 30px;
+  }
+  .humb-list::before{
+    transform: rotate(90deg);
+  }
+  .humb-list:nth-of-type(3)::after {
+    background: url(../images/recruit_top_menue-ic01.png) no-repeat;
+    background-size: contain;
+    width: 11px;
+    height: 18px;
+    top: 25px;
+    right: 5px;
+}
+  .humb-list:nth-of-type(3)::before,
+  .list-ic::before {
+    content: none;
+  }
+  .humb-content li {
+    background: #fff;
+    margin-bottom: 1px;
+    position: relative;
+  }
+  .humb-content li::after {
+    content: "";
+    display: inline-block;
+    background: url(../images/recruit_top_menue-ic02.png) no-repeat;
+    background-size: cover;
+    width: 7px;
+    height: 11px;
+    position: absolute;
+    right: 16px;
+    top: 18px;
+  }
+  .humb-content .tab-ic::after {
+    background: url(../images/recruit_top_menue-ic03.png) no-repeat;
+    background-size: cover;
+    left: auto;
+    width: 10px;
+    height: 9px;
+  }
+  .humb-list a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+  }
+  .humb-content a{
+    padding: 14px 15px;
+  }
+  .entry, .mypage {
+    width: 49%;
+    text-align: center;
+    margin-left: 0;
+  }
+  .entry a, .mypage a{
+    padding: 8px;
+  }
+  .CatchCopy {
+    width: 275px;
+    top: 75px;
+  }
+  .business-name::after {
+    margin: 2px auto 0;
+  }
+  .mainView {
+    background: url(../images/recruit_top_bg01-sp.png) no-repeat;
+    background-size: contain;
+    padding: 36px 12px 20px;
+}
+  .mainView h2 {
+    font-size: 2.1rem;
+    letter-spacing: -.5px;
+  }
+  .mainView>p {
+    font-size: 1.3rem;
+    padding-bottom: 20px;
+  }
+  .slider-wrap{
+    margin: 18px 0 20px;
+  }
+  #next-btn, #prev-btn {
+    padding: 21px 14px 21px 10px;
+  }
+  #prev-btn {
+    left: -12px;
+  }
+  #next-btn {
+    right: -12px;
+  }
+  .person-name {
+      font-size: 1.6rem;
+      padding-bottom: 8px;
+  }
+  .person-text {
+    font-size: 1.0rem;
+  }
+  .f-center {
+    display: block;
+    text-align: center;
+  }
+  .footer-wrap {
+    margin: 0 0 20px;
+  }
+}
